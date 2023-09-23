@@ -1,0 +1,175 @@
+.search {
+  /* box-shadow: inset 0 0 0 1px rgb(97, 64, 97);
+  background-color: rgb(129, 86, 129); */
+  box-shadow: inset 0 0 0 1px rgb(90, 59, 90);
+  background-color: rgb(117, 76, 117);
+  height: 35px;
+  border-radius: 20px;
+  margin: -6px 15px 0;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.search:hover {
+  /* box-shadow: inset 0 0 0 1px rgb(82, 54, 82);
+  background-color: rgb(109, 71, 109); */
+  box-shadow: inset 0 0 0 1px rgb(97, 64, 97);
+  background-color: rgb(129, 86, 129);
+}
+
+/* .search:active {
+  box-shadow: inset 0 0 0 1px rgb(66, 41, 66);
+  background-color: rgb(89, 61, 89);
+} */
+
+.search_input {
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  /* padding: 5px 10px; */
+  width: 150px;
+  transition: color 0.3s ease;
+}
+
+.search_input::placeholder {
+  color: white;
+}
+
+.searchIcon {
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.searchIcon:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/* .search {
+    height: 35px;
+    border-radius: 20px;
+    margin: -7px 0px 0px 0px;
+}
+
+.search_input {
+    outline: none;
+    color: white;
+    width: 100px;
+}
+
+.searchIcon {
+    color:white;
+    cursor: pointer;
+}
+
+.search_input::placeholder {
+    color: white;
+    font-weight: 500;
+  } */
+
+
+
+
+.header {
+  display: flex;
+  padding: 20px 24px 3px 0px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+
+}
+
+.header:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.top {
+  background-color: purple;
+  background-image: url("../public/background.png");
+  color: white;
+}
+
+
+
+.link_categories a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link_categories {
+  font-size: 15px;
+  position: relative;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+
+
+.link {
+  display: flex;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenuItem {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+
+/* .meliordism {
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.amygdala,
+.pro,
+.categories {
+    font-size: 15px;
+    margin-right: 5px;
+    font-weight: 500;
+} */
+
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  background-color: rgb(155, 101, 155);
+  padding: 10px;
+  margin-left: 45px;
+}
+
+.categories {
+  /* display: none; */
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  background-color: rgb(155, 101, 155);
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 45px;
+}
+
+.link_categories.show .submenu {
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .search {
+    margin: -6px 40px -6px 10px !important;
+  }
+}

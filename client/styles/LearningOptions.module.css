@@ -1,0 +1,18 @@
+.learningOptionsContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.learningOptionButton {
+  padding: 0.5rem;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid rgb(124, 42, 179);
+  margin: 3px;
+}
+
+.disabledButton {
+  /* background-color: grey; */
+  border: 1px solid grey;
+}

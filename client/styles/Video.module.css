@@ -1,0 +1,411 @@
+.videoContainer {
+  margin-bottom: 30px;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+  object-fit: cover;
+  max-height: 500px;
+}
+
+
+.video {
+  background-color: #000;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.hashtag {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.interaction {
+  display: flex;
+  color: rgba(22, 24, 35, .75)
+}
+
+.interactionNum {
+  display: flex;
+  color: grey;
+}
+
+/* .likeIcon {
+    margin-right: 15px;
+    font-size: 22px;
+    
+} */
+
+.likeIcon {
+  margin-right: 15px;
+  font-size: 22px;
+  color: rgba(22, 24, 35, .75);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+@keyframes likeAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.likeIcon.clicked {
+  color: #FB3958;
+  /* Color when clicked */
+  animation: likeAnimation 0.4s;
+}
+
+
+.commentIcon {
+  font-size: 22px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.username {
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(22, 24, 35, .75);
+}
+
+.username a {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+
+/* .expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 70vw;
+  height: 70vh;
+  background-color: #000;
+} */
+
+.commentIcon {
+  cursor: pointer;
+}
+
+
+.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  z-index: 9999;
+}
+
+.expandedVideo {
+  width: 40%;
+  height: 100%;
+  background-color: #000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.expandedVideo video {
+  width: 100%;
+  height: 100%;
+}
+
+.expandedContent {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  padding: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%
+}
+
+.modalVideo {
+  width: 50%;
+  background-color: #000;
+}
+
+.modalVideo video {
+  width: 100%;
+  height: 100%;
+}
+
+/* .comments {
+  width: 50%;
+  padding: 10px;
+  overflow-y: auto; 
+} */
+
+.right {
+  /* padding: 10px; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.avatar {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.topLeft {
+  display: flex;
+}
+
+.trashIcon {
+  color: red;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* .videoInfoModal {
+  width: 100%
+} */
+
+.videoUsername {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.description {
+  padding: 10px 20px;
+  display: flex;
+}
+
+.comments {
+  padding: 0px 20px;
+}
+
+.middle {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.bottom {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.interactionInfo {
+  padding: 10px;
+}
+
+.date {
+  color: grey;
+  font-size: 13px;
+}
+
+.videoLike {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.emoji {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.comment_text textarea {
+  width: 100%;
+  /* height: 100px; */
+  padding: 7px;
+  resize: none;
+  border-color: #ccc;
+  border-radius: 5px;
+}
+
+.comment_text {
+  margin: 0px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.likeIconEx {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #000;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.likeIconEx.clicked {
+  color: #FB3958;
+  /* Color when clicked */
+  animation: likeAnimation 0.4s;
+}
+
+.commentIconEx {
+  font-size: 20px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+
+
+.addComment {
+  display: flex;
+  padding: 15px 10px;
+  width: 100%;
+}
+
+.addComment textarea {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.addComment textarea:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.addComment .post {
+  /* position: absolute; */
+  right: 10px;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  /* padding: 5px 10px; */
+  border-radius: 8px;
+  background-color: white;
+  color: purple;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  opacity: 0.8;
+}
+
+.addComment .post:hover {
+  background-color: none;
+  /* color: purple; */
+  /* opacity: 1; */
+}
+
+.addComment .post:disabled {
+  background-color: none;
+  color: rgba(22, 24, 35, 0.5);
+  cursor: default;
+  opacity: 1;
+}
+
+.hashtagLink {
+  color: rgba(43, 93, 185, 1);
+  text-decoration: none;
+}
+
+.videoElement {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .video {
+    min-height: 300px;
+  }
+
+  .emoji {
+    display: none;
+  }
+
+  .addComment {
+    padding: 10px 5px;
+  }
+
+  .middle {
+    padding-right: 0px;
+  }
+
+  .description {
+    padding: 10px 10px 5px 10px;
+  }
+
+  .comments {
+    padding: 0 10px;
+  }
+
+  .top {
+    padding: 0 10px;
+  }
+
+  .interactionInfo {
+    padding: 5px 10px;
+  }
+
+}

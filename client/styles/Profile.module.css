@@ -1,0 +1,176 @@
+.profileContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-left: 300px;
+}
+
+.content {
+  padding: 2rem 4rem 0rem 4rem;
+}
+
+.explore {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileInfo {
+  display: flex;
+  /* justify-content: center; */
+  margin: 50px 0px 30px 70px;
+}
+
+.center {
+  display: flex;
+}
+
+.right {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* .label {
+    margin-left: 60px;
+} */
+
+.avatar input[type='file'] {
+  display: none;
+}
+
+.avatar input[type='file']+label {
+  display: none;
+}
+
+
+
+.myAvatar:hover img {
+  filter: grayscale(70%);
+}
+
+.avatar:hover .cameraIcon,
+.avatar:hover .uploadText,
+.avatar:hover .uploadText2 {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cameraIcon,
+.uploadText,
+.uploadText2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cameraIcon {
+  font-size: 22px;
+  transform: translate(-50%, -50%);
+}
+
+.uploadText {
+  font-size: 12px;
+  padding-top: 10px;
+  transform: translateX(-50%);
+}
+
+.uploadText2 {
+  width: 100%;
+  font-size: 12px;
+  padding-top: 25px;
+  transform: translateX(-25%);
+}
+
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.avatar img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.posts {
+  color: rgba(22, 24, 35, 0.75);
+  margin-left: 5px;
+}
+
+.postNum {
+  display: flex;
+  margin-left: 5px;
+}
+
+
+.sidebar {
+  width: 225px;
+  height: calc(100% - 20px);
+  background-color: purple;
+  background-image: url("../public/background.png");
+  background-position: -25px -75px;
+  color: #fff;
+  position: fixed;
+  top: 58.3px;
+  left: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.editIcon {
+  display: none;
+}
+
+@media (max-width: 1030px) {
+  .sidebar {
+    width: 72px;
+    background-position: -55px -75px;
+  }
+
+  .scroll {
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 720px) {
+  .center {
+    flex-direction: column;
+  }
+
+  .profileInfo {
+    margin: 50px 0px 10px 50px;
+  }
+
+  .postNum {
+    margin-left: 25px;
+  }
+
+  .right {
+    margin-left: 30px;
+  }
+
+  .content {
+    padding-left: 22px;
+    padding-right: 30px;
+  }
+
+  .editIcon {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -20px;
+  }
+}

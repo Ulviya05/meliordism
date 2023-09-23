@@ -1,0 +1,254 @@
+.header {
+    display: flex;
+    padding: 20px 24px 3px 0px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.header:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.top {
+    background-color: purple;
+    background-image: url("../public/background.png");
+    color: white;
+    background-position: -20px 0px;
+}
+
+
+
+.link_meliordism a,
+.link_pro a,
+.link_categories a,
+.link_amygdala a,
+.link_login a,
+.link_new a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link_meliordism,
+.link_pro,
+.link_categories,
+.link_amygdala,
+.link_login,
+.link_new {
+    font-size: 15px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.link_pro,
+.link_categories,
+.link_amygdala,
+.link_new {
+    margin-top: 2px;
+}
+
+
+.link {
+    display: flex;
+}
+
+.submenu {
+    display: none;
+}
+
+.link_amygdala:hover .submenu,
+.link_pro:hover .submenu,
+.link_categories:hover .submenu,
+.link_new:hover .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(155, 101, 155);
+    padding: 10px 0px;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+
+.link_pro2:hover .submenu {
+    display: block;
+    position: absolute;
+    right: -30px;
+    top: 100%;
+    background-color: rgb(155, 101, 155);
+    padding: 10px;
+    z-index: 1;
+    white-space: nowrap;
+    white-space: normal;
+    /* Reset to normal white-space behavior */
+    width: 300px;
+}
+
+.link_pro2 {
+    font-size: 15px;
+    position: relative;
+    margin-right: 20px;
+    max-width: 200px;
+}
+
+.link_pro2 .submenuItem {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+/* .link_pro2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.submenuItem {
+    padding-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+
+
+.meliordism,
+.login {
+    font-size: 15px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.amygdala,
+.pro,
+.categories {
+    font-size: 15px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+
+.logo img {
+    height: 45px;
+    width: 65px;
+    margin-top: -10px;
+}
+
+.left {
+    display: flex;
+}
+
+.website {
+    font-size: 17px;
+}
+
+.right {
+    display: flex;
+}
+
+.globeIcon {
+    color: white;
+    cursor: pointer;
+    margin-left: 17px;
+    margin-right: 15px;
+}
+
+.sign {
+    display: flex;
+}
+
+.notification {
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 17px;
+    margin-top: -2px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px 5px 0px;
+}
+
+.option {
+    padding: 0.5rem 0.7rem;
+    border-radius: 25px;
+    background: transparent;
+    border: 1.3px solid white;
+    /* margin: 3px; */
+    color: white
+}
+
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notificationCount {
+    position: absolute;
+    top: -6px;
+    right: -11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 15px;
+    background-color: #d11124;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.bell {
+    color: white;
+}
+
+
+
+.submenuItem:hover {
+    background-color: rgb(117, 76, 117, 0.2);
+}
+
+@media (max-width: 720px) {
+    .link_meliordism {
+        display: none;
+    }
+  
+    .globeIcon {
+        display: none;
+    }
+
+    .notification {
+        display: none;
+    }
+
+    .link_amygdala {
+        display: none;
+    }
+
+    .link_new {
+        display: none;
+    }
+
+    .link_pro {
+        margin-right: 0;
+        margin-left: -15px;
+    }
+
+    .link_pro:hover .submenu {
+        left: -55px;
+    }
+}

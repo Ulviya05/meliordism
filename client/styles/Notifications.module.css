@@ -1,0 +1,174 @@
+/* Notifications Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: hsl(210, 60%, 98%);
+  /* Light gray for the whole page background */
+  height: 100vh;
+  /* padding: 20px; Add padding to create space on the left and right */
+}
+
+/* Top Bar */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  /* Optional: Set a max-width for the top bar */
+  padding: 10px 0;
+  /* Add padding to space out the top bar */
+}
+
+/* Number of Notifications */
+.number {
+  background-color: #821e82;
+  /* LinkedIn blue color */
+  color: #ffffff;
+  border-radius: 7px;
+  width: 34px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+/* Mark All as Read Button */
+.topBar h3 {
+  cursor: pointer;
+  color: #65186a;
+  /* LinkedIn blue color */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.topBar h3:hover {
+  text-decoration: underline;
+}
+
+/* Notifications Box */
+.notifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  /* Optional: Set a max-width for the notifications */
+}
+
+/* Notification */
+.notification {
+  background-color: hsl(211, 68%, 94%);
+  /* Light blue for unread notifications */
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  /* Adjust the width as needed */
+}
+
+.notification2 {
+  background-color: hsl(251, 68%, 94%);
+  /* Light blue for unread notifications */
+  /* hsl(251, 68%, 94%); */
+  /* hsl(211, 68%, 94%); */
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding: 16px;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  /* Adjust the width as needed */
+}
+
+.notificationsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 20px 0px;
+  padding-left: 240px;
+}
+
+/* Unread Notification */
+/* .notification.unread {
+    font-weight: bold;
+  } */
+
+/* Seen Notification */
+.notification.seen {
+  background-color: #ffffff;
+  /* White for seen notifications */
+}
+
+/* Notification Content */
+.notification>div {
+  font-size: 16px;
+}
+
+/* Hover Effect */
+.notification:hover {
+  background-color: #f0f0f0;
+  /* Light gray on hover */
+}
+
+.left {
+  display: flex;
+  margin-left: 10px;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px 5px 0px;
+}
+
+.option {
+  padding: 0.5rem 0.7rem;
+  border-radius: 25px;
+  background: transparent;
+  border: 0.8px solid black;
+  /* margin: 3px; */
+  color: black
+}
+
+.sidebar {
+  width: 225px;
+  height: calc(100% - 20px);
+  background-color: purple;
+  background-image: url("../public/background.png");
+  background-position: -25px -75px;
+  color: #fff;
+  position: fixed;
+  top: 58.3px;
+  left: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1030px) {
+  .sidebar {
+    width: 72px;
+    background-position: -55px -75px;
+  }
+
+  .notificationsContainer {
+    padding-left: 150px;
+    padding-right: 80px
+  }
+}
+
+@media (max-width: 720px) {
+  .notificationsContainer {
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+}

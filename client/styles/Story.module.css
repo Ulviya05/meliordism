@@ -1,0 +1,181 @@
+.storyContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  padding: 0px 15%;
+  width: 100%;
+}
+
+.avatar img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 20px;
+  /* Adjust margin */
+}
+
+.middle {
+  flex: 1;
+  margin-right: 100px;
+}
+
+.middleTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.story {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  max-width: 30vw;
+  word-wrap: break-word;
+}
+
+.date {
+  color: rgba(22, 24, 35, 0.5);
+}
+
+.likeNum {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  margin-top: 5px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.like {
+  font-size: 19px;
+  color: #000;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+@keyframes likeAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.like.clicked {
+  color: #fb3958;
+  animation: likeAnimation 0.4s;
+}
+
+.middleBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.comment_container {
+  display: flex;
+  background-color: #fff;
+  /* padding: 30px; */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* justify-content: space-evenly; */
+
+}
+
+.comment_text {
+  padding: 0px 15px;
+  width: 100%;
+}
+
+.comment_text textarea {
+  border: 1.5px solid hsl(223, 19%, 93%);
+  border-radius: 10px;
+  outline: none;
+  padding: 15px;
+  resize: none;
+  width: calc(100% - 30px);
+  font-family: 'Rubik', sans-serif;
+}
+
+.comment_text textarea::placeholder {
+  color: hsl(211, 10%, 45%);
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.send button {
+  border-radius: 8px;
+  padding: 10px 15px;
+  /* font-family: 'Rubik', sans-serif; */
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #7d2c90;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 50ms;
+}
+
+.send button:hover {
+  background-color: #fff;
+  color: #7d2c90;
+  box-shadow: 0 0 0 2px #7d2c90;
+  transition: 0.3s;
+}
+
+
+.trashIcon {
+  color: red;
+  margin-right: 150px;
+}
+
+@media (max-width: 720px) {
+
+  .middle {
+    margin-right: auto;
+  }
+
+  .tweet {
+    padding: 0px;
+  }
+
+  .username {
+    margin-right: 20px;
+  }
+
+  .right {
+    margin-right: -20px;
+  }
+
+  .storyContainer {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,14 @@
+.outerContainer {
+    background-color: rgb(155, 101, 155);
+    display: flex;
+    justify-content: center;
+}
+
+/* .container {
+    height: calc(100vh - 30px);
+    margin: 15px;
+    background-color: #fff;
+    flex: 1;
+    display: flex;
+    border-radius: 30px;
+} */

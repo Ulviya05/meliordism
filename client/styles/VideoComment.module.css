@@ -1,0 +1,158 @@
+.avatar img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 10px;
+}
+
+.comment,
+.middleTop,
+.middleBottom {
+  display: flex;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.like {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+
+.left {
+  display: flex;
+}
+
+.username {
+  font-size: 15px;
+  margin-right: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.commentDate {
+  color: rgba(22, 24, 35, 0.5);
+  font-size: 13px;
+  /* margin-right: 5px; */
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.likeNum {
+  display: flex;
+  justify-content: center;
+}
+
+.reply {
+  cursor: pointer;
+  color: rgba(22, 24, 35, 0.5);
+  font-weight: 400;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.like,
+.likeNum {
+  font-size: 13px;
+}
+
+.content {
+  font-size: 15px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 1030px) {
+  .content {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .content {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 635x) {
+  .content {
+    max-width: 50px;
+  }
+}
+
+
+
+.like {
+  color: #000;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+@keyframes likeAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.like.clicked {
+  color: #FB3958;
+  /* Color when clicked */
+  animation: likeAnimation 0.4s;
+}
+
+@media (max-width: 720px) {
+  .right {
+    margin-top: 2px;
+    /* margin-right: -10px; */
+  }
+
+  .comment {
+    display: flex;
+  }
+
+  .middleTop {
+    flex-direction: column;
+  }
+
+  .middle {
+    width: 80px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,139 @@
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .sidebar li {
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .sidebar li.active {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .option:hover {
+    background-color: rgb(95, 56, 108, 0.5);
+    /* background-color: rgba(74, 43, 84, 0.5);  */
+  }
+
+  .option {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    width: 225px;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px 0px 30px;
+    font-size: 20px
+  }
+
+  @media (max-width: 1030px) {
+    .option li {
+      display: none;
+    }
+
+    .sidebar ul {
+      margin-left: -10px;
+    }
+
+    .icon {
+      padding: 20px 0;
+    }
+  }
+
+  .upload_button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .upload_button button {
+    /* margin-top: 10px; */
+    padding: 15px 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 15px;
+    background-color: #703a82;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.upload_button button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    opacity: 0;
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.upload_button button:hover {
+    transform: scale(1.05);
+    background-color: #73258d;
+}
+
+.upload_button button:hover:before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+}
+
+.upload_button button:active {
+    transform: scale(0.95);
+}
+
+.active {
+  color:rgb(234, 187, 253)
+}
+
+.notificationCount {
+  display: none;
+}
+
+@media (max-width: 720px) {
+
+.notificationCount {
+  position: absolute;
+  top: 306px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 15px;
+  background-color: #d11124;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.upload_button button{
+  padding: 10px;
+  margin-left: 10px
+}
+
+}
+
